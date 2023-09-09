@@ -1,22 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
+import ImgHero from "./images/image.jpg";
 
 function App() {
-  
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-          Helloo my react app changed and commited!!!
-          <button onClick={() => h()}>Click This Button </button>
-      </header>
-    </div>
+    <section className="hero" style={{ backgroundImage: `url(${ImgHero})` }}>
+      <div className="content">
+        <h1>Be Creative.</h1>
+        <p>
+          {" "}
+          Get ready to transform your React applications into visually stunning
+          experiences.
+        </p>
+        <a href="#">Start Now</a>
+      </div>
+    </section>
   );
 }
 
-
-function h() {
-  console.log("Button Clicked");
-}
 export default App;
